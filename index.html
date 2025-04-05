@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Parcial 2</title>
+    <link rel="shortcut icon" href="https://moria.aurens.com/organizations/855b1cd9-cb79-476e-8b03-3d56561c8512/logos/tloo4j-uua.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/5095e24fbb.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</head>
+<body style="background-color: #121212;" >
+    <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #1e1e1e;">
+        <div class="container-fluid" >
+            <a class="navbar-brand"  style="color: #bb86ff; font-size: 1.6rem;">
+                <img src="https://moria.aurens.com/organizations/855b1cd9-cb79-476e-8b03-3d56561c8512/logos/tloo4j-uua.png" alt="Logo" width="48" height="40" class="d-inline-block align-text-top" >
+                Temario
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"  style="color: #bb86ff; font-size: 1.5rem;">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http.html" style="color: #bb86ff; font-size: 1.5rem;">HTTP</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #bb86ff; font-size: 1.5rem;">
+                  Web APIs
+                </a>
+                <ul class="dropdown-menu" style="background-color: #1e1e1e;">
+                  <li><a class="dropdown-item " href="tecnologias.html" style="color: #bb86ff; font-size: 1.5rem;">Tecnologias</a></li>
+                  <li><a class="dropdown-item " href="desarrollo.html" style="color: #bb86ff; font-size: 1.5rem;">Desarrollo</a></li>
+                  <li><a class="dropdown-item " href="soap.html" style="color: #bb86ff; font-size: 1.5rem;">SOAP</a></li>
+                  <li><a class="dropdown-item " href="rest.html" style="color: #bb86ff; font-size: 1.5rem;">Rest y RestFul</a></li>
+                  <li><a class="dropdown-item " href="jwt.html" style="color: #bb86ff; font-size: 1.5rem;">JWT</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="microservicios.html" style="color: #bb86ff; font-size: 1.5rem;">Microservicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="contenedores.html" style="color: #bb86ff; font-size: 1.5rem;">Contenedores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nube.html" style="color: #bb86ff; font-size: 1.5rem;">Aplicaciones en la nube</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background-color: #121212; color: #b0b0b0; border-color: #bb86ff;font-size: 1.5rem;">
+              <button class="btn btn-outline-success" type="submit" style="background-color:#03dac6; color: #000000; font-size: 1.5rem;">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <main>
+      <div class="container-fluid mx-auto" style="width: 80%;" id="Contenedor">
+        <div class="p-3 border-0  " style="background-color: #121212; box-shadow:0 6px 20px #03dac6;">
+        <div class="container py-4" style="width: 80%; margin: 0 auto;">
+          <h1 class="display-5">Tecnologías Modernas de Desarrollo</h1>
+          <p class="lead">Información esencial sobre cloud computing, APIs y contenedores</p>
+          <br><br>
+          <div class="row g-4">
+            <div class="col-md-6" id="cloud">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title"><i class="fas fa-cloud me-2"></i>Aplicaciones Cloud</h2>
+                  <p class="card-text">
+                    Explicación sobre computación en la nube, modelos de servicio (IaaS, PaaS, SaaS) 
+                    y proveedores principales (AWS, Azure, GCP).
+                  </p>
+                  <button class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#videoModal">
+                    <i class="fas fa-play me-2"></i> Ver Video Explicativo
+                  </button>
+                  <div class="modal fade modal-video" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title text-white" id="videoModalLabel">Tutorial de Docker</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body p-0">
+                                  <div class="video-container">
+                                    <iframe id="video" width="798" height="488" src="https://www.youtube.com/embed/h4Af5bbFAq0" title="¿Qué es la nube (cloud computing)? - La mejor explicación en español" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>  
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="cerrarvideo btn" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6" id="apis">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title"><i class="fas fa-plug me-2"></i>Web APIs</h2>
+                  <p class="card-text">
+                    Fundamentos de APIs REST, GraphQL, autenticación (OAuth, JWT), 
+                    documentación con OpenAPI/Swagger y casos de uso.
+                  </p>
+                  <button class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                    <i class="fas fa-play me-2"></i> Ver Video Explicativo
+                  </button>
+                  <div class="modal fade modal-video" id="videoModal1" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title text-white" id="videoModalLabel">Tutorial de Docker</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body p-0">
+                                  <div class="video-container">
+                                    <iframe id="video1" width="798" height="488" src="https://www.youtube.com/embed/u2Ms34GE14U" title="¿Qué es una API? - La mejor explicación en español" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>  
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="cerrarvideo btn" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" id="contenedores">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title"><i class="fab fa-docker me-2"></i>Contenedores</h2>
+                  <p class="card-text">
+                    Qué son los contenedores, diferencias con máquinas virtuales, 
+                    ventajas de la contenedorización y ecosistema de herramientas.Dockerfile, 
+                    Docker Compose y mejores prácticas para su implementación.
+                  </p>
+                  <button class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                    <i class="fas fa-play me-2"></i> Ver Video Explicativo
+                  </button>
+                  <div class="modal fade modal-video" id="videoModal2" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title text-white" id="videoModalLabel">Tutorial de Docker</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body p-0">
+                                  <div class="video-container">
+                                    <iframe id="video2" width="798" height="488" src="https://www.youtube.com/embed/gjRoNFopFig" title="¿Qué es Docker y Kubernetes?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>  
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="cerrarvideo btn" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6" id="docker">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title"><i class="fas fa-project-diagram fa-2x"></i>Microservicios</h2>
+                  <p class="card-text">
+                    Introducción a Microservicios:
+                    Sistemas distribuidos donde cada servicio ejecuta un proceso único y se comunica 
+                    a través de APIs ligeras.
+                  </p>
+                  <button class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#videoModal3">
+                    <i class="fas fa-play me-2"></i> Ver Video Explicativo
+                  </button>
+                  <div class="modal fade modal-video" id="videoModal3" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title text-white" id="videoModalLabel">Tutorial de Docker</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body p-0">
+                                  <div class="video-container">
+                                    <iframe id="video3" width="798" height="488" src="https://www.youtube.com/embed/2sFczigWppk" title="¿Qué son y cómo funcionan los microservicios? - La mejor explicación en español" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>  
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="cerrarvideo btn" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer class="full-width-footer" style="background-color: #1e1e1e; width: 100vw; overflow-x: hidden;" >
+      <div class="footer-content container-fluid px-0 mx-0">
+          <div class="row text-center">
+              <div class="col-md-4">
+                  <h4 class="footer-title">Tecnologías Modernas</h4>
+                  <p>Página informativa sobre desarrollo cloud, APIs y contenedores.</p>
+              </div>
+              <div class="col-md-4">
+                  <h4 class="footer-title">Enlaces Rápidos</h4>
+                  <div class="footer-links">
+                      <a href="nube.html">Aplicaciones Cloud</a>
+                      <a href="tecnologias.html">Web APIs</a>
+                      <a href="contenedores.html">Docker</a>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <h4 class="footer-title">Contacto</h4>
+                  <div class="footer-links">
+                      <a>al337446@eu.uaa.com</a>
+                  </div>
+              </div>
+          </div>
+          <div class="text-center mt-4" style="color: #666;">
+              <p>© 2025 Tomás Abraham Hernández Rojas.</p>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
