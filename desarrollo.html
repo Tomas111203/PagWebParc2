@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Parcial 2</title>
+    <link rel="shortcut icon" href="https://moria.aurens.com/organizations/855b1cd9-cb79-476e-8b03-3d56561c8512/logos/tloo4j-uua.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/5095e24fbb.js" crossorigin="anonymous"></script>
+    <script src="js/cuestionario.js"></script>
+</head>
+<body style="background-color: #121212;">
+    <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #1e1e1e;">
+        <div class="container-fluid" >
+            <a class="navbar-brand"  style="color: #bb86ff; font-size: 1.6rem;">
+                <img src="https://moria.aurens.com/organizations/855b1cd9-cb79-476e-8b03-3d56561c8512/logos/tloo4j-uua.png" alt="Logo" width="48" height="40" class="d-inline-block align-text-top" >
+                Temario
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="color: #bb86ff; font-size: 1.5rem;">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http.html" style="color: #bb86ff; font-size: 1.5rem;">HTTP</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #bb86ff; font-size: 1.5rem;">
+                  Web APIs
+                </a>
+                <ul class="dropdown-menu" style="background-color: #1e1e1e;">
+                  <li><a class="dropdown-item " href="tecnologias.html" style="color: #bb86ff; font-size: 1.5rem;">Tecnologias</a></li>
+                  <li><a class="dropdown-item "  style="color: #bb86ff; font-size: 1.5rem;">Desarrollo</a></li>
+                  <li><a class="dropdown-item " href="soap.html" style="color: #bb86ff; font-size: 1.5rem;">SOAP</a></li>
+                  <li><a class="dropdown-item " href="rest.html" style="color: #bb86ff; font-size: 1.5rem;">Rest y RestFul</a></li>
+                  <li><a class="dropdown-item " href="jwt.html" style="color: #bb86ff; font-size: 1.5rem;">JWT</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="microservicios.html" style="color: #bb86ff; font-size: 1.5rem;">Microservicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="contenedores.html" style="color: #bb86ff; font-size: 1.5rem;">Contenedores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nube.html" style="color: #bb86ff; font-size: 1.5rem;">Aplicaciones en la nube</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background-color: #121212; color: #b0b0b0; border-color: #bb86ff;font-size: 1.5rem;">
+              <button class="btn btn-outline-success" type="submit" style="background-color:#03dac6; color: #000000; font-size: 1.5rem;">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="container-fluid mx-auto" style="width: 80%;" id="Contenedor">
+          <div class="p-3 border-0  " style="background-color: #121212; box-shadow:0 6px 20px #03dac6;">
+          <div class="container py-4" style="width: 80%; margin: 0 auto;">
+            <h1 class="display-5">Desarrollo de WebAPIs</h1>
+            <br>
+            <h3>Componentes Clave de una Web API</h3>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <ul>
+                  <li>
+                    <b>Métodos HTTP:</b>
+                    <ul>
+                      <li>GET: Obtener recursos</li>
+                      <li>POST: Crear recursos</li>
+                      <li>PUT/PATCH: Actualizar recursos</li>
+                      <li>DELETE: Eliminar recursos</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Códigos de estado HTTP:</b>
+                    <ul>
+                      <li>200 OK</li>
+                      <li>201 Created</li>
+                      <li>400 Bad Request</li>
+                      <li>401 Unauthorized</li>
+                      <li>404 Not Found</li>
+                      <li>500 Internal Server Error</li> 
+                    </ul>
+                  </li>
+                  <li><b>Headers:</b> Metadatos de la solicitud/respuesta (Content-Type, Authorization</li>
+                </ul>
+              </div>
+              <div class="col-md-6 d-flex align-items-center">
+                <img class="Imagenes" src="https://cl.abstracta.us/wp-content/uploads/2021/09/metodos-HTTP-pruebas-API-REST.png" alt="MetodosHTTP">
+              </div>
+            </div>
+            <h3> Diseño de una Web API RESTful</h3>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <ul>
+                  <li>
+                    <b>Principios REST:</b>
+                    <ul>
+                      <li>Recursos como sustantivos (no verbos)</li>
+                      <li>Uso correcto de métodos HTTP</li>
+                      <li>URLs jerárquicas y descriptivas</li>
+                      <li>Versionado (ej: /api/v1/resource)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Buenas prácticas:</b>
+                    <ul>
+                      <li>Documentación clara (OpenAPI/Swagger)</li>
+                      <li>Paginación para conjuntos de datos grandes</li>
+                      <li>Filtrado, ordenación y búsqueda</li>
+                      <li>Manejo adecuado de errores</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 d-flex align-items-center">
+                <img class="Imagenes" src="https://th.bing.com/th/id/OIP.KkUgR-oiT72tLYK43KJaEgHaEK?rs=1&pid=ImgDetMain" alt="OpenAPI">
+              </div>
+            </div>
+            <h3>Herramientas para Desarrollo y Pruebas</h3>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <ul>
+                  <li>
+                    <b>Desarrollo</b>
+                    <ul>
+                      <li>Postman</li>
+                      <li>Insomnia</li>
+                      <li>Swagger UI</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Pruebas:</b>
+                    <ul>
+                      <li>Jest(Node.js)</li>
+                      <li>PyTest(Python)</li>
+                      <li>JUnit(Java)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            <div class="col-md-6">
+              <img class="Imagenes d-flex align-items-center" src="https://th.bing.com/th/id/R.e917b4945a400a99cd2b39043436b6d9?rik=e16yDaLIdWkuyg&riu=http%3a%2f%2fbluebash.co%2fblog%2fcontent%2fimages%2f2020%2f09%2fPostman_API_Blog_Image.png&ehk=0zdUUyxz9LE%2fQe0DIbGv61qKZ6yJ%2bmTNXLETIgNMYWg%3d&risl=&pid=ImgRaw&r=0" alt="Postman">
+            </div>
+          </div>
+            <div class="container mt-5">
+              <h1 class="text-center mb-4">Evaluación de Conocimientos sobre Web APIs</h1>
+              <form id="apiQuiz" class="needs-validation" novalidate>
+                  <div class="card mb-4">
+                      <div class="card-header">
+                          <h5 class="mb-0">1. ¿Cuál de estos métodos HTTP se utiliza principalmente para obtener datos de un recurso en una API RESTful?</h5>
+                      </div>
+                      <div class="card-body">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q1" id="q1a" value="incorrect">
+                              <label class="form-check-label" for="q1a">POST</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q1" id="q1b" value="correct">
+                              <label class="form-check-label" for="q1b">GET</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q1" id="q1c" value="incorrect">
+                              <label class="form-check-label" for="q1c">PUT</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q1" id="q1d" value="incorrect">
+                              <label class="form-check-label" for="q1d">DELETE</label>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="card mb-4">
+                      <div class="card-header">
+                          <h5 class="mb-0">2. ¿Qué código de estado HTTP debería devolver una API cuando se crea exitosamente un nuevo recurso?</h5>
+                      </div>
+                      <div class="card-body">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q2" id="q2a" value="incorrect">
+                              <label class="form-check-label" for="q2a">200 OK</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q2" id="q2b" value="correct">
+                              <label class="form-check-label" for="q2b">201 Created</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q2" id="q2c" value="incorrect">
+                              <label class="form-check-label" for="q2c">204 No Content</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q2" id="q2d" value="incorrect">
+                              <label class="form-check-label" for="q2d">400 Bad Request</label>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="card mb-4">
+                      <div class="card-header">
+                          <h5 class="mb-0">3. ¿Cuál de los siguientes es un principio fundamental de las APIs RESTful?</h5>
+                      </div>
+                      <div class="card-body">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q3" id="q3a" value="incorrect">
+                              <label class="form-check-label" for="q3a">Deben usar siempre autenticación básica</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q3" id="q3b" value="incorrect">
+                              <label class="form-check-label" for="q3b">Deben devolver siempre datos en formato XML</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q3" id="q3c" value="correct">
+                              <label class="form-check-label" for="q3c">Deben ser stateless (sin estado)</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q3" id="q3d" value="incorrect">
+                              <label class="form-check-label" for="q3d">Deben usar siempre el método POST para todas las operaciones</label>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="card mb-4">
+                      <div class="card-header">
+                          <h5 class="mb-0">4. ¿Qué header HTTP se utiliza comúnmente para autenticación con JWT?</h5>
+                      </div>
+                      <div class="card-body">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q4" id="q4a" value="incorrect">
+                              <label class="form-check-label" for="q4a">Content-Type</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q4" id="q4b" value="correct">
+                              <label class="form-check-label" for="q4b">Authorization</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q4" id="q4c" value="incorrect">
+                              <label class="form-check-label" for="q4c">Accept</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q4" id="q4d" value="incorrect">
+                              <label class="form-check-label" for="q4d">Location</label>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="card mb-4">
+                      <div class="card-header">
+                          <h5 class="mb-0">5. ¿Cuál de estas es una buena práctica al diseñar endpoints para una API?</h5>
+                      </div>
+                      <div class="card-body">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q5" id="q5a" value="incorrect">
+                              <label class="form-check-label" for="q5a">Usar verbos en los nombres de los endpoints (ej: /getUsers)</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q5" id="q5b" value="correct">
+                              <label class="form-check-label" for="q5b">Usar sustantivos plurales para recursos (ej: /users)</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q5" id="q5c" value="incorrect">
+                              <label class="form-check-label" for="q5c">No incluir versionado en la API</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="q5" id="q5d" value="incorrect">
+                              <label class="form-check-label" for="q5d">No documentar los endpoints</label>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="d-grid gap-2">
+                      <button class="btn btn-light btn-lg" type="submit">Enviar Respuestas</button>
+                  </div>
+              </form>
+          </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="full-width-footer" style="background-color: #1e1e1e; width: 100vw; overflow-x: hidden;" >
+        <div class="footer-content container-fluid px-0 mx-0">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4 class="footer-title">Tecnologías Modernas</h4>
+                    <p>Página informativa sobre desarrollo cloud, APIs y contenedores.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <div class="footer-links">
+                        <a href="nube.html">Aplicaciones Cloud</a>
+                        <a href="tecnologias.html">Web APIs</a>
+                        <a href="contenedores.html">Docker</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-links">
+                        <a>al337446@eu.uaa.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4" style="color: #666;">
+                <p>© 2025 Tomás Abraham Hernández Rojas.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
